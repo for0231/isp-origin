@@ -15,4 +15,3 @@ entity.isp_server_type.collection:
   description: 'List Server type (bundles)'
   parent: system.admin_structure
   weight: 99
-
