@@ -1,0 +1,7 @@
+entity.ip.collection:
+  path: '/admin/isp/ip'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'IP'
+  requirements:
+    _permission: 'access isp administration pages'
