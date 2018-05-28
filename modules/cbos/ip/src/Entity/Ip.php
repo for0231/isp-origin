@@ -54,7 +54,7 @@ use Drupal\user\UserInterface;
  *     "add-form" = "/admin/isp/ip/add/{isp_ip_type}",
  *     "edit-form" = "/admin/isp/ip/{isp_ip}/edit",
  *     "delete-form" = "/admin/isp/ip/{isp_ip}/delete",
- *     "collection" = "/admin/isp/ip",
+ *     "collection" = "/admin/isp/ip/collection",
  *   },
  *   bundle_entity_type = "isp_ip_type",
  *   field_ui_base_route = "entity.isp_ip_type.edit_form"
