@@ -4,5 +4,5 @@ dependencies:
   enforced:
     module:
       - isp_ip
-id: default
-label: Default
+id: inet
+label: Inetip(Management IP)

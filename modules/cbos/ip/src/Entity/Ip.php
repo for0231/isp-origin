@@ -201,6 +201,10 @@ class Ip extends ContentEntityBase implements IpInterface {
       ->setDisplayConfigurable('view', TRUE)
       ->setRequired(TRUE);
 
+    $fields['ipu'] = BaseFieldDefinition::create('integer')
+      ->setSetting('unsigned', TRUE)
+      ->setSetting('size', 'big');
+
     $fields['status'] = BaseFieldDefinition::create('boolean')
       ->setLabel(t('Publishing status'))
       ->setDescription(t('A boolean indicating whether the IP is published.'))
@@ -221,4 +225,8 @@ class Ip extends ContentEntityBase implements IpInterface {
     return $fields;
   }
 
+  public function preSave(EntityStorageInterface $storage) {
+    $this->set('ipu', ip2long($this->label()));
+    parent::preSave($storage);
+  }
 }

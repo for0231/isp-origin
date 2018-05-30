@@ -24,6 +24,14 @@ class IpForm extends ContentEntityForm {
     return $form;
   }
 
+  public function validateForm(array &$form, FormStateInterface $form_state) {
+    // TODO need to check ip valid.
+    if (ip2long($form_state->getValue('name')) == -1 || ip2long($form_state->getValue('name')) === FALSE) {
+      $form_state->setErrorByName('name', $this->t('error'));
+    }
+    return parent::validateForm($form, $form_state);
+  }
+
   /**
    * {@inheritdoc}
    */
