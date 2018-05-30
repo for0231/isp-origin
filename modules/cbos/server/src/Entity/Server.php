@@ -18,6 +18,7 @@ use Drupal\user\UserInterface;
  * @ContentEntityType(
  *   id = "isp_server",
  *   label = @Translation("Server"),
+ *   label_collection = @Translation("Server"),
  *   bundle_label = @Translation("Server type"),
  *   handlers = {
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
@@ -209,9 +210,10 @@ class Server extends ContentEntityBase implements ServerInterface {
       ->setSetting('target_type', 'isp_ip')
       ->setSetting('handler_settings', [
         'auto_create' => TRUE,
+        'auto_create_bundle' => 'onet',
         'target_bundles' => [
-          'default',
-          'mip'
+          'inet',
+          'onet',
         ],
       ])
       ->setDisplayOptions('view', [
@@ -224,7 +226,7 @@ class Server extends ContentEntityBase implements ServerInterface {
         'settings' => [
           'match_operator' => 'CONTAINS',
           'size' => '60',
-          'placeholder' => '',
+          'placeholder' => t('Create onet ip arbitrarily.'),
         ]
       ])
       ->setDisplayConfigurable('form', TRUE)

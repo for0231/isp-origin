@@ -17,6 +17,7 @@ use Drupal\user\UserInterface;
  * @ContentEntityType(
  *   id = "isp_ip",
  *   label = @Translation("IP"),
+ *   label_collection = @Translation("IP"),
  *   bundle_label = @Translation("IP type"),
  *   handlers = {
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
