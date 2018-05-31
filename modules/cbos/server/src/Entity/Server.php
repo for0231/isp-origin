@@ -211,10 +211,6 @@ class Server extends ContentEntityBase implements ServerInterface {
       ->setSetting('handler_settings', [
         'auto_create' => TRUE,
         'auto_create_bundle' => 'onet',
-        'target_bundles' => [
-          'inet',
-          'onet',
-        ],
       ])
       ->setDisplayOptions('view', [
         'type' => 'entity_reference_label',
