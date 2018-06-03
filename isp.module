@@ -28,3 +28,24 @@ function isp_help($route_name, RouteMatchInterface $route_match) {
 function isp_toolbar_alter(&$items) {
   $items['administration']['#attached']['library'][] = 'isp/toolbar';
 }
+
+/**
+ * Implements hook_preprocess_HOOK() for menu__role_menu.
+ */
+function isp_preprocess_menu__role_menu(&$variables) {
+  $icons = [
+    'isp.system_administrator.system_administration' => 'fa fa-foursquare',
+  ];
+  _isp_set_menu_items_icon($variables['items'], $icons);
+}
+
+function _isp_set_menu_items_icon(&$items, $icons) {
+  foreach ($items as $key => $item) {
+    if (isset($icons[$key])) {
+      $items[$key]['icon'] = $icons[$key];
+    }
+    if (!empty($item['below'])) {
+      _isp_set_menu_items_icon($item['below'], $icons);
+    }
+  }
+}

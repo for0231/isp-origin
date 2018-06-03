@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @file
+ * Contains isp_core_translation.module.
+ */
+
+/**
+ * Implements hook_locale_translation_projects_alter().
+ */
+function isp_core_translation_locale_translation_projects_alter(&$projects) {
+  $path = drupal_get_path('module', 'isp_core_translation');
+  $projects['drupal']['info']['interface translation project'] = 'translation';
+  $projects['drupal']['info']['interface translation server pattern'] = $path . '/translations/drupal.%language.po';
+}
