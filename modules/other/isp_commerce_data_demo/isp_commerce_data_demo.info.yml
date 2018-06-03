@@ -1,0 +1,5 @@
+name: 'ISP commerce data demo'
+type: module
+description: 'My Awesome Module'
+core: 8.x
+package: 'ISP Other'
