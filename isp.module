@@ -49,3 +49,12 @@ function _isp_set_menu_items_icon(&$items, $icons) {
     }
   }
 }
+
+/**
+ * Implements hook_locale_translation_projects_alter().
+ */
+function isp_locale_translation_projects_alter(&$projects) {
+  $path = drupal_get_path('module', 'isp');
+  $projects['drupal']['info']['interface translation project'] = 'translation';
+  $projects['drupal']['info']['interface translation server pattern'] = $path . '/translations/drupal.%language.po';
+}

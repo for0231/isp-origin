@@ -5,3 +5,9 @@ isp.admin_isp:
     _title: 'ISP'
   requirements:
     _permission: 'access isp administration pages'
+isp.install_demo_data:
+  path: '/admin/isp/install_demo_data'
+  defaults:
+    _controller: '\Drupal\isp\Controller\DemoController::installDemoData'
+  requirements:
+    _permission: 'administer isp commerce demo data'
