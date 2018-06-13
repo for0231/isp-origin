@@ -1,0 +1,13 @@
+name: isp_commerce
+type: theme
+description: 'My Awesome theme'
+package: ISP
+core: 8.x
+libraries:
+  - isp_commerce/global-styling
+ 
+base theme: commerce_bootstrap
+
+regions:
+  content: Content
+  content: Content

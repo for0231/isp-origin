@@ -1,0 +1,17 @@
+name: Smart Seven
+type: theme
+description: 'Smartadmin framework'
+package: isp
+core: 8.x
+libraries:
+  - smart_seven/global-styling
+ 
+base theme: seven
+
+regions:
+  content: Content
+  header: Header
+  leftpanel: Leftpanel
+  rightpanel: Rightpanel
+  footer: Footer
+  shortcut: Shortcut
