@@ -1,0 +1,37 @@
+{#
+/**
+ * Add page comment.
+ */
+#}
+
+<header id="header">
+  {% if page.header %}
+    {{ page.header }}
+  {% endif %}
+</header>
+
+<aside id="left-panel">
+  {{ page.left }}
+  <span class="minifyme" data-action="minifyMenu"> <i class="fa fa-arrow-circle-left hit"></i> </span>
+</aside>
+
+<div id="main" role="main">
+  <div id="ribbon">
+    {{ page.ribbon }}
+  </div>
+  <div id="content">
+    {{ page.content }}
+  </div>
+</div>
+
+<div class="page-footer">
+  {{ page.footer }}
+</div>
+
+{% block shortcut %}
+  {% if page.shortcut %}
+  <div id="shortcut">
+    {{ page.shortcut }}
+  </div>
+  {% endif %}
+{% endblock %}

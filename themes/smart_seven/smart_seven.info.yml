@@ -5,13 +5,11 @@ package: isp
 core: 8.x
 libraries:
   - smart_seven/global-styling
- 
 base theme: seven
-
 regions:
-  content: Content
   header: Header
-  leftpanel: Leftpanel
-  rightpanel: Rightpanel
+  ribbon: Ribbon
+  content: Content
+  left: Leftpanel
   footer: Footer
   shortcut: Shortcut

@@ -71,9 +71,9 @@
   .background-clip(padding-box);
 }
 .opacity(@opacity: 0.5) {
-  -moz-opacity: @opacity;
-  -khtml-opacity: @opacity;
   -webkit-opacity: @opacity;
+  -khtml-opacity: @opacity;
+  -moz-opacity: @opacity;
   opacity: @opacity;
   @opperc: @opacity * 100;
   -ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(opacity=@{opperc})";
@@ -153,4 +153,13 @@
   -moz-background-clip: @argument;
   -webkit-background-clip: @argument;
   background-clip: @argument;
+}
+
+
+
+// Added by Zia
+.prefix(@prop, @value){
+  -webkit-@{prop} : @value;
+  -moz-@{prop} : @value;
+  @{prop} : @value;
 }

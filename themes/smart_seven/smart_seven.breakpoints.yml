@@ -1,6 +1,24 @@
+smart_seven.pad:
+  label: pad
+  mediaQuery: 'all and (min-width: 320px) and (max-width: 479px)'
+  weight: '1'
+  multipliers:
+    - '1x'
 smart_seven.narrow:
   label: narrow
-  mediaQuery: 'all and (min-width: 560px) and (max-width: 850px)'
-  weight: '1'
+  mediaQuery: 'all and (min-width: 480px) and (max-width: 767px)'
+  weight: '2'
+  multipliers:
+    - '1x'
+smart_seven.standard:
+  label: standard
+  mediaQuery: 'all and (min-width: 768px) and (max-width: 979px)'
+  weight: '3'
+  multipliers:
+    - '1x'
+smart_seven.large:
+  label: large
+  mediaQuery: 'all and (min-width: 980px)'
+  weight: '4'
   multipliers:
     - '1x'

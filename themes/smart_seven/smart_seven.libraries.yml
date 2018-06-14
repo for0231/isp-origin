@@ -1,0 +1,19 @@
+global-styling:
+  version: VERSION
+  css:
+    theme:
+      css/bootstrap.css: {}
+      css/font-awesome.css: {}
+      css/smartadmin-production.css: {}
+#      css/smartadmin-production-plugin.css: {}
+      css/smartadmin-skins.css: {}
+      css/smartadmin.css: {}
+      https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700: { type: remote}
+  js:
+    js/bootstrap/bootstrap.js: {}
+    js/app.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.ui
+    - core/jquery.ui.effects.highlight
+    - core/drupal
