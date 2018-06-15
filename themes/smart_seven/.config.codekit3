@@ -6690,6 +6690,83 @@
 		"oAP": "\/smart_seven.theme",
 		"oF": 0
 		},
+	"\/templates\/block\/block--bare.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/templates\/block\/block--bare.html.twig",
+		"oF": 0
+		},
+	"\/templates\/block\/block--local-actions-block.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/templates\/block\/block--local-actions-block.html.twig",
+		"oF": 0
+		},
+	"\/templates\/block\/block--local-tasks-block.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/templates\/block\/block--local-tasks-block.html.twig",
+		"oF": 0
+		},
+	"\/templates\/block\/block--page-title-block.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/templates\/block\/block--page-title-block.html.twig",
+		"oF": 0
+		},
+	"\/templates\/block\/block--search.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/templates\/block\/block--search.html.twig",
+		"oF": 0
+		},
+	"\/templates\/block\/block--system-branding-block.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/templates\/block\/block--system-branding-block.html.twig",
+		"oF": 0
+		},
+	"\/templates\/block\/block--system-menu-block--account.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/templates\/block\/block--system-menu-block--account.html.twig",
+		"oF": 0
+		},
+	"\/templates\/block\/block--system-menu-block--main.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/templates\/block\/block--system-menu-block--main.html.twig",
+		"oF": 0
+		},
+	"\/templates\/block\/block--system.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/templates\/block\/block--system.html.twig",
+		"oF": 0
+		},
+	"\/templates\/block\/block-list.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/templates\/block\/block-list.html.twig",
+		"oF": 0
+		},
+	"\/templates\/block\/block.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/templates\/block\/block.html.twig",
+		"oF": 0
+		},
 	"\/templates\/system\/page--admin.html.twig": {
 		"cB": 0,
 		"ft": 8192,

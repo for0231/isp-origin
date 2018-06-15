@@ -22,3 +22,18 @@ function isp_commerce_data_demo_help($route_name, RouteMatchInterface $route_mat
     default:
   }
 }
+
+/**
+ * Implements hook_demo_data_info().
+ */
+function isp_commerce_data_demo_demo_data_info() {
+  $path = drupal_get_path('module', 'isp_commerce_data_demo') . '/tests/data';
+  return [
+    [
+      'id' => 'store_csv',
+      'source' => [
+        'path' => $path . '/store.csv',
+      ],
+    ],
+  ];
+}

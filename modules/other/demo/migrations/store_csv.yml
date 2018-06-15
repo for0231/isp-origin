@@ -1,0 +1,21 @@
+id: store_csv
+label: Store(csv)
+migration_tags: { }
+source:
+  plugin: csv
+  header_row_count: 1
+  path: modules/isp/modules/other/demo/tests/data/store.csv
+  keys:
+    - name
+    - mail
+process:
+  name: name
+  mail: mail
+  address:
+    plugin: entity_lookup
+    source: address
+  default_currency: currency
+  country: country
+destination:
+  plugin: entity:commerce_store
+migration_dependencies: { }

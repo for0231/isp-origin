@@ -8,6 +8,6 @@ isp.admin_isp:
 isp.install_demo_data:
   path: '/admin/isp/install_demo_data'
   defaults:
-    _controller: '\Drupal\isp\Controller\DemoController::installDemoData'
+    _controller: '\Drupal\isp\Controller\IspController::installDemoData'
   requirements:
     _permission: 'administer isp commerce demo data'
