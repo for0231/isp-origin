@@ -1,0 +1,11 @@
+base:
+  version: VERSION
+  css:
+    theme:
+      assets/css/color.style.css: {}
+  js:
+    assets/js/color.script.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
