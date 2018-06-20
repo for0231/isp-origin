@@ -8,4 +8,18 @@ libraries:
 base theme: classy
 #Using Classy as a base theme https://www.drupal.org/theme-guide/8/classy
 regions:
-  content: Content
+  header:             'Header'                    # 1
+  primary_menu:       'Main menu'                 # 1
+  secondary_menu:     'Secondary menu'            # 1
+  highlighted:        'Highlighted'               # 1
+  help:               'Help'                      # 1
+  section_nav:        'Section Nav'               # 2
+  breadcrumb:         'Breadcrumb'                # 1
+  page_title:         'Page Title'                # 2
+  local_tasks:        'Local Tasks'               # 2
+  content:            'Content (Constrained)'     # 1
+  content_fullwidth:  'Content (Edge-to-edge)'    # 2
+  colophon_first:     'Colophon First Col'        # 3
+  colophon_second:    'Colophon Second Col'       # 3
+  colophon_third:     'Colophon Third Col'        # 3
+  footer:             'Footer'                    # 1
